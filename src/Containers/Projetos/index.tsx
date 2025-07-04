@@ -1,5 +1,5 @@
-import Projeto from '../../Components/Projeto'
-import Title from '../../Components/Title'
+import Projeto from '../../components/Projeto'
+import Title from '../../components/Title'
 
 import { Lista } from './style'
 

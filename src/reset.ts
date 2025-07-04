@@ -9,7 +9,8 @@ const EstiloGlobal = createGlobalStyle`
 }
 
   body {
-    padding: 80px 0;
+    padding: 80px 20px;
+    background-color: ${(props) => props.theme.corDeFundo};
 
     @media (max-width: 768px) {
     padding-top: 30px;

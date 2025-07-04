@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { P } from '../../Components/Paragrafo/style'
+import { P } from '../../components/Paragrafo/style'
 
 export const Descricao = styled(P)`
   margin: 24px 0 40px;
@@ -8,14 +8,19 @@ export const Descricao = styled(P)`
 export const BotaoTema = styled.button`
   border-radius: 12px;
   padding: 8px;
-  color: #eee;
+  color: ${(props) => props.theme.corDeFundo};
   font-size: 10px;
   font-weight: bold;
-  background-color: #282a35;
+  background-color: ${(props) => props.theme.corFundoBotao};
   cursor: pointer;
 `
 export const SidebarContainer = styled.div`
   position: sticky;
   top: 80px;
   left: 0;
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+    text-align: center;
+  }
 `
